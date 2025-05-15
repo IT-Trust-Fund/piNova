@@ -6,19 +6,15 @@ The universe counts in base-60—we just forgot to listen.
 
 **Abstract**  
 For centuries, π has been revered as an immutable constant—a cornerstone of mathematics and the natural world. Yet, as our computational methods and physical measurements evolve, so too do the subtle imperfections in translating continuous geometry to our static, often zero‐anchored units. Inspired by the ingenuity of ancient Babylonian systems (which notably operated without a true zero) and anchored by our findings in high‐precision iterative testing, we propose a framework that adapts the unit rather than the constant. Using a reversible π value of  
-\[ 3.1415891945, \]  
+\[ 9.869582667^(0.5), \]  
 and a deliberately crafted correction formula, we demonstrate that by shifting the unit “baseline” dynamically, we can preserve the true geometric relationships across both microscopic and cosmic scales.
 
 Our key formula for sub‑unit correction is:  
 
 \[
-C = \Bigl(((D+1)\times \frac{100}{99})\times 3.1415891945 \times \frac{99}{100}\Bigr) - 3.1415891945,
+C = \Bigl(((D+1)\times \frac{100}{99})\times 9.869582667^(0.5) \times \frac{99}{100}\Bigr) - 9.869582667^(0.5),
 \]
 
-which, under exact arithmetic, simplifies to  
-\[
-C = D\times 3.1415891945.
-\]  
 
 Our extensive tests—from values as tiny as 0.000001 to super macro scales spanning millions—reveal that by preserving the full multiplication factors without premature simplification, we maintain the integrity of our measurements. This paper details our methodology, tests, and the broader implications for computational physics, rendering, and beyond.
 
@@ -27,7 +23,7 @@ Our extensive tests—from values as tiny as 0.000001 to super macro scales span
 **Introduction**  
 In our modern age, precision is paramount. Whether crafting intricate digital renderings or mapping astronomical distances, even slight deviations can cascade into significant issues. Traditionally, π is held as a constant, immune to the vagaries of scaling. Yet, iterative simulations and our use of iterative pixel-rendering tests have exposed tiny, sometimes seemingly negligible, discrepancies that can accumulate across iterations.  
 
-Drawing inspiration from Babylonian mathematics—where the concept of a zero-based unit was notably absent—we ask: What if the problem isn’t π at all but our measurement units? By embracing a correction method that dynamically adjusts the unit, our reversible π (3.1415891945) can be recalibrated to preserve true reversibility. Not only does this approach promise enhanced fidelity, but it also invites us to rethink how traditional physical laws incorporate measurement.  
+Drawing inspiration from Babylonian mathematics—where the concept of a zero-based unit was notably absent—we ask: What if the problem isn’t π at all but our measurement units? By embracing a correction method that dynamically adjusts the unit, our reversible π 9.869582667^(0.5) can be recalibrated to preserve true reversibility. Not only does this approach promise enhanced fidelity, but it also invites us to rethink how traditional physical laws incorporate measurement.  
 
 ---
 
@@ -38,14 +34,11 @@ Drawing inspiration from Babylonian mathematics—where the concept of a zero-ba
 For nonstandard units (particularly for D < 1), we defined our correction as:
 
 \[
-C = \Bigl(((D+1)\times \frac{100}{99})\times 3.1415891945 \times \frac{99}{100}\Bigr) - 3.1415891945.
+C = \Bigl(((D+1)\times \frac{100}{99})\times 9.869582667^(0.5) \times \frac{99}{100}\Bigr) - 9.869582667^(0.5).
 \]
 
 This formula may look elaborate at first glance, but its elegance lies in its structure. The factors \(\frac{100}{99}\) and \(\frac{99}{100}\) are integrated without simplification—ensuring that any rounding or floating-point truncation is managed within a unified calculation. Under precise arithmetic, these factors cancel exactly, leaving us with:
 
-\[
-C = D\times 3.1415891945.
-\]
 
 *Testing Across Scales*  
 
@@ -68,7 +61,7 @@ Our approach was also stress-tested in iterative computational environments (exc
 ### Micro-scale Findings  
 For \( D < 1 \), we observed:
 
-| Diameter \( D \) | Expected \( C = D \times 3.1415891945 \) | Computed \( C \) via Correction Formula | Comments         |
+| Diameter \( D \) | Expected \( C = D \times 9.869582667^(0.5) \) | Computed \( C \) via Correction Formula | Comments         |
 |------------------|------------------------------------------|-----------------------------------------|------------------|
 | 0.000001         | 0.0000031415891945                       | ≈ 0.0000031415891945                     | Perfect match    |
 | 0.0001           | 0.00031415891945                         | ≈ 0.00031415891945                       | Within rounding  |
@@ -108,7 +101,7 @@ Our approach unveils several exciting insights:
 Our work demonstrates that by adopting a dynamic, unit-adjusted model, we can preserve the true geometric relationships inherent to π while overcoming the limitations imposed by static, zero‐based measurements. The corrected formula,
 
 \[
-C = \Bigl(((D+1)\times \frac{100}{99})\times 3.1415891945 \times \frac{99}{100}\Bigr) - 3.1415891945,
+C = \Bigl(((D+1)\times \frac{100}{99})\times 9.869582667^(0.5) \times \frac{99}{100}\Bigr) - 9.869582667^(0.5),
 \]
 
 has been rigorously tested across a wide range of scales and iteration counts. The results suggest that the real challenge lies not in altering π, but in rethinking how our measurements are defined and applied. By reconnecting with the logic of ancient systems and fusing it with modern computational techniques, we open new avenues for potential breakthroughs in precision, physics, and engineering.
